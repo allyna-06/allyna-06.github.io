@@ -1,0 +1,121 @@
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+  padding: 20px 0;
+}
+
+/* Header and nav */
+header {
+  background: #0b2545;
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+}
+.logo {
+  font-size: 1.8em;
+  font-weight: bold;
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+.nav-links li {
+  margin-left: 20px;
+}
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  transition: color 0.3s;
+}
+.nav-links a:hover {
+  color: #f0db4f;
+}
+
+/* Hero section */
+#hero {
+  background: url('uni.png') no-repeat center center/cover;
+  color: white;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 20px;
+}
+.hero-content h2 {
+  font-size: 2.5em;
+  margin-bottom: 15px;
+}
+.hero-content p {
+  font-size: 1.2em;
+  margin-bottom: 25px;
+}
+.btn {
+  background: #f0db4f;
+  color: #333;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+.btn:hover {
+  background: #ffe600;
+}
+
+/* Sections */
+#about, #contact {
+  padding: 40px 0;
+}
+#about h2, #courses h2, #contact h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+/* Course cards */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+.card {
+  background: #f7f9fb;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  transition: transform 0.3s;
+}
+.card:hover {
+  transform: translateY(-5px);
+}
+.card h3 {
+  margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+  background: #0b2545;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 40px;
+}
